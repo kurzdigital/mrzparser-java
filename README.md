@@ -37,4 +37,24 @@ before giving it to `MrzParser.parse()`:
 
 	String pure = MrzParser.purify("I  <\nUTO"); // => "I<UTO"
 
+## How to include
+
+### Android with Gradle
+
+Add the JitPack repository to your root `build.gradle` at the end of
+repositories:
+
+	allprojects {
+		repositories {
+			…
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+Then add the dependency in your `app/build.gradle`:
+
+	dependencies {
+		implementation 'com.github.kurzdigital:mrzparser-java:1.0.0'
+	}
+
 [mrz]: https://en.wikipedia.org/wiki/Machine-readable_passport

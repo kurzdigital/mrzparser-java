@@ -30,8 +30,6 @@ public abstract class AbstractMrzParser {
 		return sum % 10;
 	}
 
-	abstract public MrzInfo parse(String text);
-
 	protected static String[] splitName(String text) {
 		// Make sure to return an array with at least two items.
 		String names[] = text.split("<<");

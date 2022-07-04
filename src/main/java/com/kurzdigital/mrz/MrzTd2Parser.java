@@ -37,8 +37,7 @@ public class MrzTd2Parser extends AbstractMrzParser {
 					// check digit
 					"([0-9]{1})");
 
-	@Override
-	public MrzInfo parse(String text) {
+	public static MrzInfo parse(String text) {
 		String documentCode;
 		String issuingState;
 		String primaryIdentifier;

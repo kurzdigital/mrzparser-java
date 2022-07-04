@@ -45,8 +45,7 @@ public class MrzFranceParser extends AbstractMrzParser {
 					// with digits 1-35 in second row
 					"([0-9]{1})");
 
-	@Override
-	public MrzInfo parse(String text) {
+	public static MrzInfo parse(String text) {
 		String documentCode;
 		String nationality;
 		String primaryIdentifier;

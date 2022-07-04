@@ -40,8 +40,7 @@ public class MrzTd1Parser extends AbstractMrzParser {
 			Pattern.compile(
 					"([A-Z<]{30})");
 
-	@Override
-	public MrzInfo parse(String text) {
+	public static MrzInfo parse(String text) {
 		String documentCode;
 		String issuingState;
 		String documentNumber;

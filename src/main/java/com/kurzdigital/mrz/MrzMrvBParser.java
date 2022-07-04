@@ -31,8 +31,7 @@ public class MrzMrvBParser extends AbstractMrzParser {
 					// optional data by the issuing state
 					"([A-Z0-9<]{8})");
 
-	@Override
-	public MrzInfo parse(String text) {
+	public static MrzInfo parse(String text) {
 		String documentCode;
 		String issuingState;
 		String names[];
